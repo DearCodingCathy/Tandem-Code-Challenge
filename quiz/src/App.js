@@ -48,7 +48,7 @@ export default function App() {
     
     setShowAnswers(false);
 
-    if (newIndex >= questions.length) {
+    if (newIndex >= 10) {
       setGameEnd(true);
     }
   }
@@ -71,10 +71,9 @@ export default function App() {
         <Query
           data={questions[currentIndex]}
           showAnswers={showAnswers}
-              handleAnswer={handleAnswer}
-            handleNext={handleNext}
+          handleAnswer={handleAnswer}
+          handleNext={handleNext}
             />
-
         </div>
     )
       :
