@@ -4,6 +4,8 @@ import Data from './Services/Apprentice_TandemFor400_Data.json'
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CountUp from 'react-countup';
+
 
 
 export default function App() {
@@ -59,7 +61,7 @@ export default function App() {
       <>
       <h1>Game Over!</h1>
       <h2 className='final-score'>
-        Final Score: {score}
+          Final Score: <CountUp end={score} />
       </h2>
       </>
     )
