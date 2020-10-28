@@ -1,0 +1,13 @@
+.question-box {
+  /* border: 2px solid red; */
+  width: 50%;
+
+}
+
+.answer-contain {
+  width: 50%;
+}
+
+.next-btn {
+  margin-top: -10%;
+}
