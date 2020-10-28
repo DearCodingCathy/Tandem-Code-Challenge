@@ -76,7 +76,7 @@ _**Tandem Quiz** is a one player React based quiz app, that test users knowledge
 
 ### Code Showcase
 
-``useEffect(() => {
+`useEffect(() => {
     const data = Data;
     // setQuestions(data);
     const questions = data.map((question) => 
@@ -88,7 +88,7 @@ _**Tandem Quiz** is a one player React based quiz app, that test users knowledge
         ].sort(() => Math.random() - 0.5)
       }))
     setQuestions(questions)
-  }, []) ``
+  }, [])`
 
 ### Code Issues & Resolutions
 
