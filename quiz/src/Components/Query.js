@@ -16,7 +16,7 @@ const Query = ({
     <div className='question-contain d-flex my-5 '>
 
   <div className='question-box mr-3 my-auto '>
-        <h2 className='my-2 mx-4'>
+        <h2 className='my-2 mx-4 question'>
             {question}
           </h2>
         </div>
@@ -32,7 +32,7 @@ const Query = ({
           
       return (
           <button
-          className={` ${bgColor} btn mb-3`}
+          className={` ${bgColor} btn mb-1 answer-btn`}
             onClick={() => handleAnswer(answer)}>
             {answer}
           </button>

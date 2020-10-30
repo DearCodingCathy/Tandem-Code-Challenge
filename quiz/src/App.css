@@ -1,17 +1,26 @@
 body {
-border: 5px solid black;
-/* width: 100%; */
+/* border: 5px solid black; */
 height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 
-.container {
+.shadow-container {
+  margin: auto;
   background-color: rgb(171, 201, 211);
   border: 2px solid rgb(171, 201, 211);
   border-radius: 10%;
-  /* width: 200px; */
   height: 50vh;
+  width: 60%;
   box-shadow: 12px 12px 2px 1px rgba(1, 1, 34, 0.116);
+}
+
+@media screen and (max-width: 480px) {
+  .shadow-container {
+  height: 60vh;
+  width: 90%;
+  box-shadow: 12px 12px 2px 1px rgba(1, 1, 34, 0.116);
+  margin: auto;
+}
 }

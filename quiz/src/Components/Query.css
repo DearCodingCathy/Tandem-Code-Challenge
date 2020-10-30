@@ -1,13 +1,38 @@
 .question-box {
-  /* border: 2px solid red; */
   width: 50%;
-
 }
 
 .answer-contain {
   width: 50%;
 }
 
+.question {
+  font-size: 25px;
+}
+
 .next-btn {
-  margin-top: -10%;
+  margin-top: -7%;
+}
+
+@media screen and (max-width: 480px) {
+  .question-contain {
+    width: auto;
+  }
+.question-box {
+  width: 40%;
+}
+
+.answer-contain {
+  width: 40%;
+  height: 50px;
+}
+.question {
+  font-size: 25px;
+}
+.answer-btn {
+  margin-bottom: 0px;
+}
+.next-btn {
+  margin-top: 7%;
+}
 }

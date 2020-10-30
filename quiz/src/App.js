@@ -55,6 +55,10 @@ export default function App() {
     }
   }
 
+  const handleReplay = () => {
+    setCurrentIndex(0)
+    setGameEnd(false)
+  }
 
   return (
     gameEnd ? (
@@ -62,13 +66,15 @@ export default function App() {
       <h1>Game Over!</h1>
       <h2 className='final-score'>
           Final Score: <CountUp end={score} />
-      </h2>
+        </h2>
+        <button
+        onClick={handleReplay}>Replay</button>
       </>
     )
       :
       (
     questions.length > 0 ? (
-      <div className='container'>
+      <div className='shadow-container'>
         
         <Query
           data={questions[currentIndex]}
